@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sjasmpg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="windows_esp">
+				<Option platforms="Windows;" />
+				<Option output="../sjasmpg_win_esp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/sjasmpg_win_esp/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DSPANISH" />
+					<Add option="-DWINDOWS" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+				</Linker>
+			</Target>
+			<Target title="windows_eng">
+				<Option platforms="Windows;" />
+				<Option output="../sjasmpg_win_eng" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/sjasmpg_win_eng/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DWINDOWS" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+				</Linker>
+			</Target>
+			<Target title="linux_esp">
+				<Option platforms="Unix;" />
+				<Option output="../sjasmpg_linux_esp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/sjasmpg_linux_esp/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DSPANISH" />
+					<Add option="-DLANGUAGE_UTF8" />
+					<Add option="-DLINUX" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+				</Linker>
+			</Target>
+			<Target title="linux_eng">
+				<Option platforms="Unix;" />
+				<Option output="../sjasmpg_linux_eng" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/sjasmpg_linux_eng/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DLINUX" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-static-libgcc" />
+					<Add option="-static-libstdc++" />
+				</Linker>
+			</Target>
+			<Target title="mac_esp">
+				<Option platforms="Mac;" />
+				<Option output="../sjasmpg_mac_esp" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/sjasmpg_mac_esp/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-DSPANISH" />
+					<Add option="-DLANGUAGE_UTF8" />
+					<Add option="-DAPPLE" />
+				</Compiler>
+			</Target>
+			<Target title="mac_eng">
+				<Option platforms="Mac;" />
+				<Option output="../sjasmpg_mac_eng" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/sjasmpg_mac_eng/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-DAPPLE" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="../src/datadir.cpp" />
+		<Unit filename="../src/datadir.h" />
+		<Unit filename="../src/datastructures.cpp" />
+		<Unit filename="../src/datastructures.h" />
+		<Unit filename="../src/directives.cpp" />
+		<Unit filename="../src/directives.h" />
+		<Unit filename="../src/errors.cpp" />
+		<Unit filename="../src/errors.h" />
+		<Unit filename="../src/expressions.cpp" />
+		<Unit filename="../src/expressions.h" />
+		<Unit filename="../src/fileio.cpp" />
+		<Unit filename="../src/fileio.h" />
+		<Unit filename="../src/language_iso.h" />
+		<Unit filename="../src/language_utf8.h" />
+		<Unit filename="../src/output.cpp" />
+		<Unit filename="../src/output.h" />
+		<Unit filename="../src/pimsx.cpp" />
+		<Unit filename="../src/pimsx.h" />
+		<Unit filename="../src/preprocessor.cpp" />
+		<Unit filename="../src/preprocessor.h" />
+		<Unit filename="../src/rawsource.cpp" />
+		<Unit filename="../src/rawsource.h" />
+		<Unit filename="../src/reader.cpp" />
+		<Unit filename="../src/reader.h" />
+		<Unit filename="../src/sjasmpg.cpp" />
+		<Unit filename="../src/sjasmpg.h" />
+		<Unit filename="../src/sjasmpg.rc">
+			<Option compilerVar="WINDRES" />
+			<Option target="windows_esp" />
+			<Option target="windows_eng" />
+		</Unit>
+		<Unit filename="../src/source.cpp" />
+		<Unit filename="../src/source.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

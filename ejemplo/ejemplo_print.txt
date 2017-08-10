@@ -1,0 +1,6 @@
+Memoria ROM0 (16K) consumida = 10771
+Memoria ROM0 (16K) libre     = 5613
+Memoria ROM1 (32K) consumida = 2474
+Memoria ROM1 (32K) libre     = 30294
+Memoria RAM  (16K) consumida = 2462
+Memoria RAM  (16K) libre     = 13922

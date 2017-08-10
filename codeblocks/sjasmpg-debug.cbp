@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sjasmpg" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="windows_deb">
+				<Option platforms="Windows;" />
+				<Option output="../sjasmpg_win_deb" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/windows_deb/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DWINDOWS" />
+				</Compiler>
+			</Target>
+			<Target title="linux_deb">
+				<Option platforms="Unix;" />
+				<Option output="../sjasmpg_linux_deb" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../" />
+				<Option object_output="../obj/linux_deb/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-DLINUX" />
+				</Compiler>
+			</Target>
+		</Build>
+		<Unit filename="../src/datadir.cpp" />
+		<Unit filename="../src/datadir.h" />
+		<Unit filename="../src/datastructures.cpp" />
+		<Unit filename="../src/datastructures.h" />
+		<Unit filename="../src/directives.cpp" />
+		<Unit filename="../src/directives.h" />
+		<Unit filename="../src/errors.cpp" />
+		<Unit filename="../src/errors.h" />
+		<Unit filename="../src/expressions.cpp" />
+		<Unit filename="../src/expressions.h" />
+		<Unit filename="../src/fileio.cpp" />
+		<Unit filename="../src/fileio.h" />
+		<Unit filename="../src/language_iso.h" />
+		<Unit filename="../src/language_utf8.h" />
+		<Unit filename="../src/output.cpp" />
+		<Unit filename="../src/output.h" />
+		<Unit filename="../src/pimsx.cpp" />
+		<Unit filename="../src/pimsx.h" />
+		<Unit filename="../src/preprocessor.cpp" />
+		<Unit filename="../src/preprocessor.h" />
+		<Unit filename="../src/rawsource.cpp" />
+		<Unit filename="../src/rawsource.h" />
+		<Unit filename="../src/reader.cpp" />
+		<Unit filename="../src/reader.h" />
+		<Unit filename="../src/sjasmpg.cpp" />
+		<Unit filename="../src/sjasmpg.h" />
+		<Unit filename="../src/sjasmpg.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="../src/source.cpp" />
+		<Unit filename="../src/source.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
