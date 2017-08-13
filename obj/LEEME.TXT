@@ -1,0 +1,1 @@
+Al compilar aquí se crearán los archivos objeto.
